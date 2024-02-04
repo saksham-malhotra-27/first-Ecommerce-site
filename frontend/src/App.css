@@ -1,0 +1,91 @@
+#bgsvg{
+/*  background-color:  hsla(23, 84%, 47%, 0.597) ;
+*/
+background-image: url(https://images.unsplash.com/photo-1595232208179-d8cf4ca455fc?q=80&w=1909&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+/* for users.jsx*/
+.user-list {
+   width: 100%; 
+  gap: 2rem;
+  height: 100%;
+  overflow: auto;
+  list-style-type: none;
+  
+}
+
+/* Apply box shadow and text shadow to each list item */
+.user-item {
+  background-color:  rgba(0, 0, 0, 0.3) ;
+  border-radius: 5px;
+  color: wheat;
+  box-shadow: 0px 8px 10px black;   /* Box shadow */
+  padding: 1rem; /* Add padding for better visual separation */
+}
+
+/* Text shadow for user details */
+.user-item strong {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+}
+
+
+
+/* Media query for screens wider than 820px (flex row) */
+@media (min-width: 820px) {
+  .user-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .user-item {
+    flex: 0 0 calc(50% - 2rem);
+  }
+}
+/* for admin dashboard */
+
+
+.addash {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  color: whitesmoke;
+  padding: 1em;
+  width: auto;
+  min-height: 20rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 16px black;
+}
+
+@media (min-width : 581px) {
+  .addash{
+    flex-direction: row;
+  }
+}
+/*productdetails*/
+.addash2{
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  color: whitesmoke;
+  padding: 1em;
+  width: auto;
+  min-height: 20rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 16px black;
+}
+
+@media (min-width : 885px) {
+  .addash2{
+    flex-direction: row;
+  }
+}
+/* for navbar */
+.catnav{
+  text-decoration:none;
+  color:black;
+}
+.catnav:hover {
+  background-color: beige;
+  color:black
+}
